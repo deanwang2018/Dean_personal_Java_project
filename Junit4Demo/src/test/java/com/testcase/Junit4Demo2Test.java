@@ -8,7 +8,6 @@ import org.junit.*;
  * @date 2020/9/28
  * @time 10:51
  */
-@Ignore
 public class Junit4Demo2Test {
     @Test
     public void fun4(){
