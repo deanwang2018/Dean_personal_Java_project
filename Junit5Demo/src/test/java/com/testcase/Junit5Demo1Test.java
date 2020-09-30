@@ -21,14 +21,16 @@ public class Junit5Demo1Test {
     }
 
     @Test
+    @Tag("testTagDemo1")
     @DisplayName("fun1测试方法")
-    @RepeatedTest(5)
+    @RepeatedTest(2)
     void fun1(){
         System.out.println("fun1");
     }
 
     @Test
-    @Disabled
+//    @Disabled
+    @Tag("testTagDemo2")
     @DisplayName("fun2测试方法")
     void fun2(){
         System.out.println("fun2");

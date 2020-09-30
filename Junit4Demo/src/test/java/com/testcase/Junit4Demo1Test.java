@@ -1,6 +1,7 @@
 package com.testcase;
 
 import org.junit.*;
+import org.junit.runners.MethodSorters;
 
 /**
  * @author wangdian
@@ -8,6 +9,8 @@ import org.junit.*;
  * @date 2020/9/28
  * @time 10:50
  */
+//@FixMethodOrder(MethodSorters.JVM)
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class Junit4Demo1Test {
     @BeforeClass
     public static void setup(){
