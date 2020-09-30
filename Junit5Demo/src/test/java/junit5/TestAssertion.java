@@ -1,0 +1,23 @@
+package junit5;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertAll;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+/**
+ * @author wangdian
+ * @package junit5
+ * @date 2020/9/30
+ * @time 9:54
+ */
+public class TestAssertion {
+    @Test
+    void assertion(){
+        assertAll("demo assertions",
+                ()-> assertEquals(1,2),
+                ()-> assertEquals(1,1),
+                ()-> assertEquals(1,3)
+        );
+    }
+}
