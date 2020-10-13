@@ -17,7 +17,7 @@ public class StartSeleniumTest {
 
 //        System.setProperty("Webdriver.chrome.driver",
 //                "D:\\Dean_working_dir\\working_software_target\\chromedriver_win32");
-
+//        wd.findElement(By.cssSelector(".d-button-label")).click();
         wd.get("https://home.testing-studio.com");
 
         wd.findElement(By.xpath("//span[contains(text(),'登录')]")).click();
