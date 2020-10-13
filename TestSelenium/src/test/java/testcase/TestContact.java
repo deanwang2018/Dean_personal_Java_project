@@ -1,7 +1,9 @@
 package testcase;
 
 import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
+import page.ConTactPage;
 import page.MainPage;
 
 /**
@@ -11,12 +13,25 @@ import page.MainPage;
  * @time 9:28
  */
 public class TestContact {
+    static MainPage main;
+    static ConTactPage contact;
+
+    @BeforeAll
+    static void setupEnv() {
+        main = new MainPage();
+        contact = main.toContact();
+    }
+
     @Test
-    void testAddMember(){
-        MainPage main = new MainPage();
-        main.toContact().addMember("Ethan","Ethan20201013","18610061672");
+    void testAddMember() {
+        contact.addMember("2", "2", "12345678901");
 
         // todo: assert
+    }
+
+    @Test
+    void testSearch() {
+        contact.search("2").delete();
     }
 
     @AfterAll

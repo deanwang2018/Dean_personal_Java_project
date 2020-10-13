@@ -18,6 +18,11 @@ public class ConTactPage {
     public static WebDriver driver;
     public static WebDriverWait wait;
     By addMember = By.linkText("添加成员");
+    By tips = By.linkText("添加成功");
+    By delete = By.linkText("删除");
+    By confirm = By.linkText("确认");
+    By clearSearch = By.id("clearMemberSearchInput");
+
 
     public ConTactPage addMember(String username, String acctid, String mobile) {
         // todo:
@@ -35,8 +40,30 @@ public class ConTactPage {
         return this;
     }
 
+    public ConTactPage search(String keywords) {
+        driver.findElement(By.id("memberSearchInput")).sendKeys(keywords);
+        while (driver.findElements(tips).size() > 0) {
+            ExplicitWaitToClick(delete);
+        }
+        return this;
+    }
+
+    public ConTactPage delete() {
+        ExplicitWaitToClick(delete);
+        driver.findElement(delete).click();
+        ExplicitWaitToClick(confirm);
+        driver.findElement(confirm).click();
+        ExplicitWaitToClick(clearSearch);
+        driver.findElement(clearSearch).click();
+        return this;
+    }
+
     public static void GetDriver() {
         driver = MainPage.driver;
         wait = new WebDriverWait(driver, 10);
+    }
+
+    public void ExplicitWaitToClick(By by) {
+        wait.until(ExpectedConditions.elementToBeClickable(by));
     }
 }
