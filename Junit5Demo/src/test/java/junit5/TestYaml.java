@@ -32,7 +32,7 @@ public class TestYaml {
         TypeReference typeReference = new TypeReference<List<User>>() {
         };
         List<User> users = (List<User>) mapper.readValue(
-                TestYaml.class.getResourceAsStream("/user.json"),
+                TestYaml.class.getResourceAsStream("/user.yaml"),
                 typeReference
         );
         return users;

@@ -17,7 +17,7 @@ import org.junit.runner.RunWith;
 @RunWith(JUnitPlatform.class)
 //@SelectPackages({"com"})
 //@IncludePackages({"com.testcase1","com.testcase2"})
-@SelectClasses({com.testcase.Junit5Demo1Test.class})
+@SelectClasses({suite.com.testcase.Junit5Demo1Test.class})
 @IncludeTags({"testTagDemo2"})
 public class Junit5SuiteDemoTest {
 

@@ -1,0 +1,11 @@
+testcase\WindowTest.class
+testcase\InteractiveTest.class
+testcase\JsTest.class
+StartSeleniumTest.class
+testcase\AiceTest.class
+testcase\AiceTest$1.class
+testcase\AlertTest.class
+testcase\FrameTest.class
+testcase\BaseTest.class
+testcase\BrowserTest.class
+testcase\UploadTest.class

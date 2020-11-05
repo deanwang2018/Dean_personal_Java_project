@@ -1,0 +1,34 @@
+name: xxx
+description: xxx
+steps:
+#  本自动化领域模型
+#  业务模型
+#  通用方法
+#  - method: click
+#    通用方法参数
+#    parms:  [1, 2]
+#    改良
+
+#    简化1
+#  - by: id
+#    value: search
+#    action: click
+#    进一步简化，如果by只是单个简单的字符串可以进一步简化
+#  - id: search
+#    action: click
+#  - id: search
+#    action: sendKeys
+#    text: "seveniruby hogwarts"
+#    主要用以下两种方法
+  - id: search
+    sendKeys: "seveniruby hogwarts"
+  - click: { id: search }
+  - id: search
+    action: getText
+    key: search_Text
+
+#  - action: click
+#    by: id
+#    locator: search
+#  - action: click
+#    id: click

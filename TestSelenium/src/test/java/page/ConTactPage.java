@@ -22,6 +22,7 @@ public class ConTactPage {
     By delete = By.linkText("删除");
     By confirm = By.linkText("确认");
     By clearSearch = By.id("clearMemberSearchInput");
+    By addDep = By.linkText("添加部门");
 
 
     public ConTactPage addMember(String username, String acctid, String mobile) {
@@ -55,6 +56,15 @@ public class ConTactPage {
         driver.findElement(confirm).click();
         ExplicitWaitToClick(clearSearch);
         driver.findElement(clearSearch).click();
+        return this;
+    }
+
+    public ConTactPage addDepartment(String depName, String subDep) {
+        driver.findElement(By.cssSelector(".member_colLeft_top_addBtn")).click();
+        driver.findElement(addDep).click();
+        driver.findElement(By.name("name")).sendKeys(depName);
+        driver.findElement(By.linkText("选择所属部门")).click();
+        
         return this;
     }
 

@@ -43,7 +43,7 @@ public class RemoteBrowserTest {
 //        driver = new FirefoxDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().window().maximize();
-//        wait = new WebDriverWait(driver,3);
+        wait = new WebDriverWait(driver,3,1);
 
     }
 

@@ -19,84 +19,99 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="20703ef4-e63d-4556-abf8-d5392f7f6f23" name="Default Changelist" comment="add test assertAll">
-      <change afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Junit4Demo/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Junit4Demo/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Junit4Demo/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Junit4Demo/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Junit4Demo/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Junit4Demo/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Junit4Demo/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Junit4Demo/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Junit4Demo/target/surefire-reports/TEST-com.testcase.Junit4Demo2Test.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Junit4Demo/target/surefire-reports/com.testcase.Junit4Demo2Test.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Junit4Demo/target/test-classes/com/suitedemo/SuitDemoTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Junit4Demo/target/test-classes/com/testcase/BaseTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Junit4Demo/target/test-classes/com/testcase/BuyTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Junit4Demo/target/test-classes/com/testcase/Junit4Demo1Test.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Junit4Demo/target/test-classes/com/testcase/Junit4Demo2Test.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Junit4Demo/target/test-classes/com/testcase/LoginTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/junit5demo.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/testcase1/Junit5Demo1Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/testcase2/Junit5Demo1Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/junit5/TestAssertion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/junit5/TestParam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/junit5/TestYaml.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/junit5/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/suite/Junit5SuiteDemoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/two-column.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/user.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/user.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/LoginTest$ButTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/LoginTest$payTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/LoginTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/com/testcase/Junit5Demo1Test.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/com/testcase1/Junit5Demo1Test.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/com/testcase2/Junit5Demo1Test.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/junit5/TestAssertion.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/junit5/TestParam$MyArgumentsProvider.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/junit5/TestParam.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/junit5/TestYaml$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/junit5/TestYaml.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/junit5/User.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/suite/Junit5SuiteDemoTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/two-column.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/user.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/user.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RedisDemo/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RedisDemo/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RedisDemo/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RedisDemo/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RedisDemo/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RedisDemo/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TestNGDemo/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TestNGDemo/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TestNGDemo/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TestNGDemo/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TestNGDemo/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TestNGDemo/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TestNGDemo/src/test/java/example/Demo_DataProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TestNGDemo/target/test-classes/example/Demo_DataProvider.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TestNGDemo/target/test-classes/example/Demo_Multithreading.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TestNGDemo/testNGdemo.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Junit4Demo/src/test/java/com/testcase/Junit4Demo1Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Junit4Demo/src/test/java/com/testcase/Junit4Demo1Test.java" afterDir="false" />
+    <list default="true" id="20703ef4-e63d-4556-abf8-d5392f7f6f23" name="Default Changelist" comment="update pom with allure config">
+      <change afterPath="$PROJECT_DIR$/../InterviewDemo/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InterviewDemo/InterviewDemo.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/util/Calculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test_framework/BasePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test_framework/UIAuto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/test_framework/uiauto.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/util/Junit5Demo_1_1_Base.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/test_framework/BasePageTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestAppium/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestAppium/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestAppium/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestAppium/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestAppium/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestAppium/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestAppium/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestAppium/src/test/java/testAppium/BaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestAppium/src/test/java/testAppium/HelloWorldTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestAppium/src/test/java/testAppium/SnowBallTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestAppium/src/test/java/testAppium/SwipeUnlockTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestAppium/techAppium.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestSelenium/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestSelenium/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestSelenium/debug.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestSelenium/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestSelenium/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestSelenium/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestSelenium/target/surefire-reports/TEST-testcase.AlertTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestSelenium/target/surefire-reports/testcase.AlertTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestSelenium/target/test-classes/StartSeleniumTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestSelenium/target/test-classes/page/ConTactPage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestSelenium/target/test-classes/page/MainPage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestSelenium/target/test-classes/testcase/AiceTest$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestSelenium/target/test-classes/testcase/AiceTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestSelenium/target/test-classes/testcase/AlertTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestSelenium/target/test-classes/testcase/BaseTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestSelenium/target/test-classes/testcase/BrowserTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestSelenium/target/test-classes/testcase/FrameTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestSelenium/target/test-classes/testcase/InteractiveTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestSelenium/target/test-classes/testcase/JsTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestSelenium/target/test-classes/testcase/RemoteBrowserTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestSelenium/target/test-classes/testcase/TestContact.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestSelenium/target/test-classes/testcase/UploadTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestSelenium/target/test-classes/testcase/WindowTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestSelenium/tech_selenium.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cucumberDemo/cucumberDemo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Junit4Demo/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../Junit4Demo/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Junit4Demo/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../Junit4Demo/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Junit4Demo/target/surefire-reports/TEST-com.testcase.Junit4Demo2Test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Junit4Demo/target/surefire-reports/TEST-com.testcase.Junit4Demo2Test.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Junit4Demo/target/surefire-reports/com.testcase.Junit4Demo2Test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Junit4Demo/target/surefire-reports/com.testcase.Junit4Demo2Test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Junit4Demo/target/test-classes/com/testcase/Junit4Demo1Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Junit4Demo/target/test-classes/com/testcase/Junit4Demo1Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/testcase/Junit5Demo1Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/testcase/Junit5Demo1Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/testcase/Junit5Demo1Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/suite/com/testcase/Junit5Demo1Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/testcase1/Junit5Demo1Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/suite/com/testcase1/Junit5Demo1Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/testcase2/Junit5Demo1Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/suite/com/testcase2/Junit5Demo1Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/junit5/TestYaml.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/junit5/TestYaml.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/suite/Junit5SuiteDemoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/suite/Junit5SuiteDemoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/LoginTest$ButTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/LoginTest$payTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/LoginTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/testcase/Junit5Demo1Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/testcase1/Junit5Demo1Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/testcase2/Junit5Demo1Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/junit5/TestAssertion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/junit5/TestParam$MyArgumentsProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/junit5/TestParam.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/junit5/TestYaml$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/junit5/TestYaml.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/junit5/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/suite/Junit5SuiteDemoTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/two-column.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/user.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/user.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TestAppium/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TestAppium/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TestAppium/src/test/java/HelloWorldTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TestNGDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TestNGDemo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TestNGDemo/src/test/java/example/Demo_Multithreading.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TestNGDemo/src/test/java/example/Demo_Multithreading.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TestNGDemo/target/test-classes/example/Demo_Multithreading.class" beforeDir="false" afterPath="$PROJECT_DIR$/../TestNGDemo/target/test-classes/example/Demo_Multithreading.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TestSelenium/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TestSelenium/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TestSelenium/src/test/java/page/ConTactPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TestSelenium/src/test/java/page/ConTactPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TestSelenium/src/test/java/testcase/RemoteBrowserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TestSelenium/src/test/java/testcase/RemoteBrowserTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,6 +122,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -116,98 +132,127 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="D:\Dean_working_dir\working_software_target\IntelliJ IDEA Community Edition 2020.2.2\plugins\maven\lib\maven3" />
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
       </MavenGeneralSettings>
     </option>
   </component>
   <component name="ProjectId" id="1i89xQCDyfX4KMoQPzx9844Y3y8" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/resources" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
-  <component name="RunManager" selected="JUnit.TestAssertion.assertion">
-    <configuration name="TestAssertion" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.util" />
+      <recent name="test_framework" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Dean_working_dir\IDEAworkspace\Dean_personal\Junit5Demo\src\main\resources\test_framework" />
+      <recent name="D:\Dean_working_dir\IDEAworkspace\Dean_personal\Junit5Demo\src\main\resources" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Dean_working_dir\IDEAworkspace\Dean_personal\Junit5Demo\src\test\resources" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.testcase" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.BasePageTest.run">
+    <configuration name="BasePageTest.load" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="junit5demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="junit5.*" />
+          <option name="PATTERN" value="test_framework.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="junit5" />
-      <option name="MAIN_CLASS_NAME" value="junit5.TestAssertion" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestAssertion.assertion" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="junit5demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="junit5.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="junit5" />
-      <option name="MAIN_CLASS_NAME" value="junit5.TestAssertion" />
-      <option name="METHOD_NAME" value="assertion" />
+      <option name="PACKAGE_NAME" value="test_framework" />
+      <option name="MAIN_CLASS_NAME" value="test_framework.BasePageTest" />
+      <option name="METHOD_NAME" value="load" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestParam.testWithCsvFileSource" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BasePageTest.run" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="junit5demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="junit5.*" />
+          <option name="PATTERN" value="test_framework.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="junit5" />
-      <option name="MAIN_CLASS_NAME" value="junit5.TestParam" />
-      <option name="METHOD_NAME" value="testWithCsvFileSource(java.lang.String,int)" />
+      <option name="PACKAGE_NAME" value="test_framework" />
+      <option name="MAIN_CLASS_NAME" value="test_framework.BasePageTest" />
+      <option name="METHOD_NAME" value="run" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestYaml" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Junit5Demo_1_1_Base" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="junit5demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="junit5.*" />
+          <option name="PATTERN" value="com.util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="junit5" />
-      <option name="MAIN_CLASS_NAME" value="junit5.TestYaml" />
+      <option name="PACKAGE_NAME" value="com.util" />
+      <option name="MAIN_CLASS_NAME" value="com.util.Junit5Demo_1_1_Base" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestYaml.testDDTFromYaml" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Junit5Demo_1_1_Base.addTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="junit5demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="junit5.*" />
+          <option name="PATTERN" value="com.util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="junit5" />
-      <option name="MAIN_CLASS_NAME" value="junit5.TestYaml" />
-      <option name="METHOD_NAME" value="testDDTFromYaml(junit5.User)" />
+      <option name="PACKAGE_NAME" value="com.util" />
+      <option name="MAIN_CLASS_NAME" value="com.util.Junit5Demo_1_1_Base" />
+      <option name="METHOD_NAME" value="addTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Junit5Demo_1_1_Base.countTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="junit5demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.util" />
+      <option name="MAIN_CLASS_NAME" value="com.util.Junit5Demo_1_1_Base" />
+      <option name="METHOD_NAME" value="countTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -215,11 +260,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestAssertion.assertion" />
-        <item itemvalue="JUnit.TestAssertion" />
-        <item itemvalue="JUnit.TestYaml.testDDTFromYaml" />
-        <item itemvalue="JUnit.TestYaml" />
-        <item itemvalue="JUnit.TestParam.testWithCsvFileSource" />
+        <item itemvalue="JUnit.BasePageTest.run" />
+        <item itemvalue="JUnit.BasePageTest.load" />
+        <item itemvalue="JUnit.Junit5Demo_1_1_Base" />
+        <item itemvalue="JUnit.Junit5Demo_1_1_Base.countTest" />
+        <item itemvalue="JUnit.Junit5Demo_1_1_Base.addTest" />
       </list>
     </recent_temporary>
   </component>
@@ -239,7 +284,28 @@
       <option name="project" value="LOCAL" />
       <updated>1601434575562</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add all left">
+      <created>1601434694425</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1601434694425</updated>
+    </task>
+    <task id="LOCAL-00003" summary="update testDynamic add example">
+      <created>1601446994805</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1601446994806</updated>
+    </task>
+    <task id="LOCAL-00004" summary="update pom with allure config">
+      <created>1601447022485</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1601447022485</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -247,64 +313,136 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/master" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="add test assertAll" />
-    <option name="LAST_COMMIT_MESSAGE" value="add test assertAll" />
+    <MESSAGE value="add all left" />
+    <MESSAGE value="update testDynamic add example" />
+    <MESSAGE value="update pom with allure config" />
+    <option name="LAST_COMMIT_MESSAGE" value="update pom with allure config" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="121" y="0" key="#Project_Structure" timestamp="1601432461318">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="2102" y="0" key="#Project_Structure" timestamp="1603948544846">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="121" y="0" key="#Project_Structure/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1601432461318" />
-    <state x="93" y="93" width="1095" height="495" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1601432507638">
+    <state x="2102" y="0" key="#Project_Structure/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1603948544846" />
+    <state x="93" y="93" width="1095" height="495" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1604496430893">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="93" y="93" width="1095" height="495" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1601432507638" />
-    <state x="446" y="46" key="#com.intellij.ide.util.MemberChooser" timestamp="1601347661166">
+    <state x="93" y="93" width="1095" height="495" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1604496430893" />
+    <state x="446" y="46" key="#com.intellij.ide.util.MemberChooser" timestamp="1601453112105">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="446" y="46" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1601347661166" />
+    <state x="446" y="46" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1601453112105" />
+    <state x="2443" y="442" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1603948008110">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2443" y="442" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1603948008110" />
+    <state x="2659" y="399" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1603948018062">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2659" y="399" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1603948018062" />
+    <state x="421" y="95" key="FileChooserDialogImpl" timestamp="1602206886788">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1602206886788" />
     <state x="455" y="259" key="Github.CreateGistDialog" timestamp="1601350772155">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="455" y="259" key="Github.CreateGistDialog/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1601350772155" />
-    <state width="1237" height="163" key="GridCell.Tab.0.bottom" timestamp="1601433086721">
+    <state width="1237" height="150" key="GridCell.Tab.0.bottom" timestamp="1604547116141">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1601433086721" />
-    <state width="1237" height="163" key="GridCell.Tab.0.center" timestamp="1601433086720">
+    <state width="1237" height="150" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1604547116141" />
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1603956657296" />
+    <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1601520838483" />
+    <state width="1237" height="150" key="GridCell.Tab.0.center" timestamp="1604547116140">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1601433086720" />
-    <state width="1237" height="163" key="GridCell.Tab.0.left" timestamp="1601433086720">
+    <state width="1237" height="150" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1604547116140" />
+    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1603956657295" />
+    <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1601520838483" />
+    <state width="1237" height="150" key="GridCell.Tab.0.left" timestamp="1604547116140">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1601433086720" />
-    <state width="1237" height="163" key="GridCell.Tab.0.right" timestamp="1601433086721">
+    <state width="1237" height="150" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1604547116140" />
+    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1603956657295" />
+    <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1601520838483" />
+    <state width="1237" height="150" key="GridCell.Tab.0.right" timestamp="1604547116140">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1601433086721" />
-    <state x="171" y="0" key="Maven.ArtifactSearchDialog" timestamp="1601433718921">
+    <state width="1237" height="150" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1604547116140" />
+    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1603956657296" />
+    <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1601520838483" />
+    <state x="171" y="0" key="Maven.ArtifactSearchDialog" timestamp="1601449814561">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="171" y="0" key="Maven.ArtifactSearchDialog/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1601433718921" />
-    <state x="142" y="0" key="SettingsEditor" timestamp="1601432419321">
+    <state x="171" y="0" key="Maven.ArtifactSearchDialog/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1601449814561" />
+    <state x="142" y="0" key="SettingsEditor" timestamp="1604495038057">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="142" y="0" key="SettingsEditor/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1601432419321" />
-    <state x="233" y="73" key="Vcs.Push.Dialog.v2" timestamp="1601434577888">
+    <state x="142" y="0" key="SettingsEditor/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1604495038057" />
+    <state x="233" y="73" key="Vcs.Push.Dialog.v2" timestamp="1601447053450">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1601434577888" />
-    <state x="28" y="1" key="new project wizard" timestamp="1601432844731">
+    <state x="233" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1601447053450" />
+    <state x="487" y="180" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1604493675345">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="28" y="1" key="new project wizard/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1601432844731" />
+    <state x="487" y="180" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1604493675345" />
+    <state x="2651" y="276" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1603952819434" />
+    <state x="2419" y="255" width="922" height="642" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1603956350470">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2419" y="255" width="922" height="642" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1603956350470" />
+    <state x="28" y="1" key="new project wizard" timestamp="1602206898830">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="28" y="1" key="new project wizard/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1602206898830" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
