@@ -19,7 +19,7 @@ steps:
 #  - id: search
 #    action: sendKeys
 #    text: "seveniruby hogwarts"
-#    主要用以下两种方法
+#    主要用前两种方法
   - id: search
     sendKeys: "seveniruby hogwarts"
   - click: { id: search }
