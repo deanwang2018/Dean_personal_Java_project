@@ -1,5 +1,7 @@
 package com.util;
 
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.RepeatedTest;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -11,6 +13,10 @@ import static org.junit.jupiter.api.Assertions.*;
  * @time 20:41
  */
 class Junit5Demo_1_1_Base {
+//    @BeforeEach
+//    public void clean(){
+//        Calculator.clear();
+//    }
 
     @Test
     void addTest() {
@@ -48,10 +54,18 @@ class Junit5Demo_1_1_Base {
         assertEquals(2, result);
     }
 
-    @Test
+    @RepeatedTest(10)
     void countTest() throws InterruptedException {
-        int result = result = Calculator.count(1, 1, 1, 1);
+//        int result = Calculator.count(1, 1, 1, 1);
+        int result = Calculator.count(1);
         System.out.println(result);
-        assertEquals(4, result);
+//        assertEquals(1, result);
+    }
+
+    @RepeatedTest(4)
+    void countAtomTest() throws InterruptedException {
+        int result = Calculator.countAtom(1);
+        System.out.println(result);
+//        assertEquals(1, result);
     }
 }
