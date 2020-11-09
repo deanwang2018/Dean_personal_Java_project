@@ -1,7 +1,7 @@
 package junit5;
 
-import io.qameta.allure.Allure;
-import io.qameta.allure.Link;
+import io.qameta.allure.*;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
@@ -16,6 +16,10 @@ public class AllureTest {
     @Test
     @Tag("Allure测试")
     @Link(name = "Dean's github", type = "deanlink", url = "https://github.com/deanwang2018/Dean_personal_Java_project")
+    @Description("Description")
+    @DisplayName("DisplayName 测试")
+    @Severity(SeverityLevel.BLOCKER)
+    @Issue("https://ceshiren.com/t/topic/7718")
     void allureTest() {
         Allure.step("step1");
         System.out.println("allure test step1");

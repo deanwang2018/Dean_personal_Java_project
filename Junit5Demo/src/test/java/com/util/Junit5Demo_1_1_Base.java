@@ -1,8 +1,15 @@
 package com.util;
 
+import io.qameta.allure.*;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.RepeatedTest;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.parallel.Execution;
+import org.junit.jupiter.api.parallel.ExecutionMode;
+import org.junit.platform.engine.support.hierarchical.ParallelExecutionConfiguration;
+import org.junit.platform.engine.support.hierarchical.ParallelExecutionConfigurationStrategy;
+import org.springframework.context.annotation.Configuration;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -58,10 +65,15 @@ class Junit5Demo_1_1_Base {
     void countTest() throws InterruptedException {
 //        int result = Calculator.count(1, 1, 1, 1);
         int result = Calculator.count(1);
-        System.out.println(result);
+        System.out.println("thread-" + Thread.currentThread().getId() + ", " + result);
 //        assertEquals(1, result);
     }
 
+    @Epic("Epic 计算器项目")
+    @Description("Description")
+    @DisplayName("DisplayName 累加并发测试")
+    @Severity(SeverityLevel.BLOCKER)
+    @Issue("https://ceshiren.com/t/topic/7718")
     @RepeatedTest(4)
     void countAtomTest() throws InterruptedException {
         int result = Calculator.countAtom(1);

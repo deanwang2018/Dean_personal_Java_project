@@ -5,14 +5,12 @@
         <parameter name="x" value="4"></parameter>
         <parameter name="y" value="2"></parameter>
         <parameter name="result" value="5"></parameter>
-        <groups>
-            <run>
-                <include name="group01" />
-                <exclude name="group02" />
-            </run>
-        </groups>
         <classes>
-            <class name="example.Demo_Multithreading" />
+            <class name="util.TestNGDemo" >
+                <methods>
+                   <include name="addTestParameter"></include>
+                </methods>
+            </class>
         </classes>
     </test>
 </suite>
