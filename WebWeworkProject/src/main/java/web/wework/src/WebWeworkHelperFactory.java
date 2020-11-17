@@ -62,25 +62,50 @@ public class WebWeworkHelperFactory {
         this.driver = driver;
     }
 
-    public WebWeworkHelperFactory(){
+    public WebWeworkHelperFactory() {
 
     }
 
-    static void waitAndClick(By by){
+    static void waitAndClick(By by) {
         wait.until(ExpectedConditions.elementToBeClickable(by));
         click(by);
     }
 
-    static void click(By by){
+    static void click(By by) {
         driver.findElement(by).click();
     }
 
-    static void sendKeys(By by, String keys){
+    static void waitAndClick(By by, int number) {
+        wait.until(ExpectedConditions.elementToBeClickable(by));
+        System.out.println(number);
+        click(by, number);
+    }
+
+    static void click(By by, int number) {
+        System.out.println(number);
+        driver.findElements(by).get(number).click();
+    }
+
+    static void sendKeys(By by, String keys) {
         driver.findElement(by).clear();
         driver.findElement(by).sendKeys(keys);
     }
 
-    public static void quitDriver(){
+    static void waitFadOut(By by, int timeout) throws InterruptedException {
+        while (driver.findElement(by).isDisplayed() && timeout != 0) {
+            System.out.println("sleep left : " + timeout);
+            Thread.sleep(1000);
+            timeout = timeout - 1;
+        }
+    }
+
+    public static void quitDriver() {
         driver.quit();
+    }
+
+    public UIAutoContact load(String path) throws IOException {
+        ObjectMapper mapper = new ObjectMapper(new YAMLFactory());
+        UIAutoContact uiAutoContact = mapper.readValue(MainPage.class.getResourceAsStream(path), UIAutoContact.class);
+        return uiAutoContact;
     }
 }

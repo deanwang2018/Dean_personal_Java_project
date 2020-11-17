@@ -2,6 +2,8 @@ package web.wework.src;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 /**
  * @author wangdian
@@ -17,6 +19,14 @@ public class ContactPage extends WebWeworkHelperFactory {
     public static By topSetDepart = By.linkText("设置所在部门");
     public static By topDelete = By.linkText("删除");
     public static By topInvite = By.linkText("微信邀请");
+
+    //    确认删除定位变量
+    public static By confirm = By.linkText("确认");
+
+    public static By judgeClickable = new By.ByCssSelector(".ww_icon_AddMember");
+
+//    定位左侧导航栏小箭头
+//    $x('//li[@role="treeitem"]//a[contains(text(),"科技部")]/preceding-sibling::i[1]')
 
     //    添加成员定位符变量
     public static By userName = new By.ByCssSelector("#username");
@@ -46,17 +56,49 @@ public class ContactPage extends WebWeworkHelperFactory {
         sendKeys(userName, username);
         sendKeys(acctNumber, acctid);
         sendKeys(phoneNumber, mobile);
-        click(save);
+        waitAndClick(save);
     }
 
-    public ContactPage addDepart(String departName) {
-        click(By.cssSelector(".member_colLeft_top_addBtn"));
+    public ContactPage addDepart(String departName) throws InterruptedException {
+        waitAndClick(By.cssSelector(".member_colLeft_top_addBtn"));
 //        click(By.linkText("添加"));
         click(By.cssSelector(".js_create_party"));
         sendKeys(By.name("name"), departName);
-        click(By.cssSelector(".js_parent_party_name"));
-        waitAndClick(By.linkText("科技部"));
-        click(By.linkText("确定"));
+        waitAndClick(By.cssSelector(".js_parent_party_name"));
+//        waitAndClick(By.linkText("科技部"), 1);
+        driver.findElement(By.xpath("//div[@class=\"member_tag_dialog_inputDlg\"]//a[contains(text(),\"科技部\")]")).click();
+
+        waitAndClick(By.linkText("确定"));
+        waitFadOut(By.id("js_tips"), 10);
+        return this;
+    }
+
+    public ContactPage updateDepartName(String oldDepartName, String newDepartName){
+        search(oldDepartName);
+        click(judgeClickable);
+        waitAndClick(By.linkText("修改名称"));
+        sendKeys(By.name("name"), newDepartName);
+        click(save);
+        return this;
+    }
+
+    public ContactPage addMemberInDepart(String departName, String memberName, String acctid, String mobile) throws InterruptedException {
+        search(departName);
+        click(judgeClickable);
+        click(By.linkText("添加成员"));
+        AddMember(memberName, acctid, mobile);
+        waitFadOut(By.id("js_tips"), 10);
+        return this;
+    }
+
+    public ContactPage deleteMember(String memberName) throws InterruptedException {
+        if (searchMemberContext(memberName).equals(memberName)) {
+            waitAndClick(topDelete);
+            waitAndClick(confirm);
+            waitFadOut(By.id("js_tips"), 10);
+        } else {
+            System.out.println("member: " + memberName + "not there!");
+        }
         return this;
     }
 
@@ -72,7 +114,7 @@ public class ContactPage extends WebWeworkHelperFactory {
 
     public ContactPage searchDepart(String departName) {
         search(departName);
-        click(By.cssSelector(".ww_icon_AddMember"));
+        click(judgeClickable);
         return this;
     }
 
@@ -82,7 +124,7 @@ public class ContactPage extends WebWeworkHelperFactory {
         return content;
     }
 
-    public static String getPartyInfo() {
+    public String getPartyInfo() {
         String content = driver.findElement(departInfo).getText();
         System.out.println(content);
         return content;
@@ -90,21 +132,23 @@ public class ContactPage extends WebWeworkHelperFactory {
 
     public static void clearAllDeparts(String departName) {
         //todo
-        search(departName);
-        if(getPartyInfo().contains("无任何成员")){
-            // delete
-        } else{
-            waitAndClick(By.cssSelector(".member_colRight_memberTable_th_Checkbox"));
-            click(topDelete);
-            waitAndClick(By.linkText("确认"));
+//        search(departName);
+//        if (getByInfo().contains("无任何成员")) {
+////             delete
+//        } else {
+//            waitAndClick(By.cssSelector(".member_colRight_memberTable_th_Checkbox"));
+//            click(topDelete);
+//            waitAndClick(confirm);
 //            driver.switchTo().alert().accept();
-            // delete
-        }
+////             delete
+//        }
     }
 
-    public static void clearMember(String memberName){
+    public static void clearMember(String memberName) throws InterruptedException {
         search(memberName);
-        waitAndClick(By.linkText("删除"));
-        waitAndClick(By.linkText("确认"));
+        waitAndClick(topDelete);
+        waitAndClick(confirm);
+        waitFadOut(By.id("js_tips"), 10);
+
     }
 }

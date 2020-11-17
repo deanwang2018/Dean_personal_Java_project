@@ -38,9 +38,9 @@ public class MainPage extends WebWeworkHelperFactory {
 
         driver = new ChromeDriver(options);
 //        driver = new ChromeDriver();
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().window().maximize();
-        wait = new WebDriverWait(driver, 5);
+        wait = new WebDriverWait(driver, 10);
         url = "https://work.weixin.qq.com/wework_admin/frame";
 
         if(!file.exists()){
