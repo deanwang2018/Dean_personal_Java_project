@@ -1,5 +1,6 @@
 package web.wework.test;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;
@@ -68,12 +69,19 @@ public class ContactPOTest extends WebWeworkHelperFactory {
                         oldDept = (String) m.get("oldDept");
                     }
 
-                    if (m.containsKey("noDept")) {
+                    if (m.containsKey("newDept")) {
                         newDept = (String) m.get("newDept");
                     }
                 }
-
         );
+        System.out.println("user: " + user + ", accid: " + accid + ", mobile: " +
+                mobile + ", deptSearch: " + deptSearch + ", noMember" +
+                ", oldDept: " + oldDept + ", newDept: " + newDept);
+        try {
+            System.out.println(contactTestParam.toYaml());
+        } catch (JsonProcessingException e) {
+            e.printStackTrace();
+        }
     }
 
     public static ContactTestParam loadTest(String path) throws IOException {
@@ -131,8 +139,22 @@ public class ContactPOTest extends WebWeworkHelperFactory {
     void testDepartAddDeleteMember() throws InterruptedException {
         mainPage.contact().searchDepart(newDept).
                 addMemberInDepart(newDept, user, accid, mobile);
-        assertTrue(mainPage.contact().deleteMember(user).
-                searchDepart(newDept).getPartyInfo().contains(noMember));
+        mainPage.contact().deleteMember(user);
+        assertTrue(mainPage.contact().searchDepart(newDept).getPartyInfo().contains(noMember));
+    }
+
+    //    删除部门
+    @Order(6)
+//    @ParameterizedTest
+//    @MethodSource("ContactTestParmList")
+    @Test
+    void testDeleteDepart() throws InterruptedException {
+        assertTrue(mainPage.contact().searchDepart(newDept).deleteDepart(newDept).getPartyInfo().contains(noMember));
+    }
+
+    @AfterEach
+    void cleanSearch(){
+        ContactPage.search("");
     }
 
 //    @AfterAll

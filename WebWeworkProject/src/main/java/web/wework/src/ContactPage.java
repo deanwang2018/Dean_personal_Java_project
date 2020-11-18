@@ -3,6 +3,7 @@ package web.wework.src;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 /**
@@ -22,6 +23,7 @@ public class ContactPage extends WebWeworkHelperFactory {
 
     //    确认删除定位变量
     public static By confirm = By.linkText("确认");
+    public static By yes = By.linkText("确定");
 
     public static By judgeClickable = new By.ByCssSelector(".ww_icon_AddMember");
 
@@ -40,6 +42,7 @@ public class ContactPage extends WebWeworkHelperFactory {
     //po原则2 不要暴露页面内部实现细节
     private static By departInfo = By.cssSelector(".js_party_info");
     private By memberInfo = By.cssSelector(".member_display_cover_detail_name");
+    private By deptInfo = By.cssSelector("#party_name");
 
     public ContactPage(WebDriver driver) {
         super(driver);
@@ -73,7 +76,7 @@ public class ContactPage extends WebWeworkHelperFactory {
         return this;
     }
 
-    public ContactPage updateDepartName(String oldDepartName, String newDepartName){
+    public ContactPage updateDepartName(String oldDepartName, String newDepartName) {
         search(oldDepartName);
         click(judgeClickable);
         waitAndClick(By.linkText("修改名称"));
@@ -96,9 +99,30 @@ public class ContactPage extends WebWeworkHelperFactory {
             waitAndClick(topDelete);
             waitAndClick(confirm);
             waitFadOut(By.id("js_tips"), 10);
+            System.out.println("complete delete member: " + memberName);
         } else {
             System.out.println("member: " + memberName + "not there!");
         }
+        return this;
+    }
+
+    public ContactPage deleteDepart(String departName) throws InterruptedException {
+        actions = new Actions(driver);
+        String[] departStruct = searchDeptContext(departName).split("/");
+        int len = departStruct.length;
+        // 清除搜索输入
+        search("");
+        for (int i = 0; i < len - 1; i++) {
+            waitAndClick(By.xpath("//li[@role=\"treeitem\"]//a[contains(text(),\"" + departStruct[i] + "\")]/preceding-sibling::i[1]"));
+        }
+        click(By.linkText(departName));
+        actions.moveToElement(driver.findElement(By.xpath("//li[@role=\"treeitem\"]//a[contains(text(),\"" + departName + "\")]/span[1]"))).click();
+        actions.perform();
+        waitAndClick(topDelete);
+        waitAndClick(yes);
+        waitFadOut(By.id("js_tips"), 10);
+        System.out.println("complete delete member: " + departName);
+
         return this;
     }
 
@@ -109,6 +133,12 @@ public class ContactPage extends WebWeworkHelperFactory {
     public String searchMemberContext(String memberName) {
         search(memberName);
         String content = getByInfo(memberInfo);
+        return content;
+    }
+
+    public String searchDeptContext(String departName) {
+        search(departName);
+        String content = getByInfo(deptInfo);
         return content;
     }
 

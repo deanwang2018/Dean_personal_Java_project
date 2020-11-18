@@ -8,6 +8,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Cookie;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -28,6 +29,7 @@ public class WebWeworkHelperFactory {
     public String url;
     public static WebDriverWait wait;
     public ChromeOptions options;
+    public static Actions actions;
 
     void addCookiesAndLogin() throws IOException {
         driver.get(url);
