@@ -122,7 +122,8 @@ public class BasePage {
     //只滚动到第一个匹配的text
     void ScrollToTextAndClick(String text) {
         AndroidDriver<MobileElement> driver = (AndroidDriver<MobileElement>) this.driver;
-        String UiScrollable = "new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().text(\"" + text + "\").instance(0));\n)";
+        String UiScrollable = "new UiScrollable(new UiSelector().scrollable(true).instance(0))." +
+                "scrollIntoView(new UiSelector().text(\"" + text + "\").instance(0));\n";
         driver.findElementByAndroidUIAutomator(UiScrollable).click();
     }
 
