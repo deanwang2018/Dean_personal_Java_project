@@ -1,0 +1,24 @@
+appName: Android_wework
+description: wework application element location values
+message:
+  - id: { "plus": "" }
+  - text: { "todo": "" }
+  - xpath: { "todo": "" }
+contact:
+  - id: { "search": "hxw","searchfield": "ghu","manage": "hxr","closemanage": "hxm",
+          "mobile": "fiv","addressinput": "it","back": "hxb","threedot": "hxm","deptstruct": "bu3" }
+  - text: { "addmember": "添加成员","manualadd": "手动输入添加","confirm": "确定","save": "保存","editmember": "编辑成员",
+            "deletemember": "删除成员","addresslist": "通讯录","cancel": "取消","addsubdept": "添加子部门",
+            "senddeptname": "请输入部门名称","companyname": "测试开发公司" }
+  - xpath: { "name": "//*[@resource-id='com.tencent.wework:id/ehw']/descendant::android.widget.EditText",
+             "sex": "", "email": "//*[@resource-id='com.tencent.wework:id/eh_']/descendant::android.widget.EditText",
+             "address": "//*[@resource-id='com.tencent.wework:id/egn']/descendant::android.widget.TextView",
+             "textview": "//*[@class='android.widget.TextView']" }
+workspace:
+  - id: { "manage": "" }
+  - text: { "todo": "" }
+  - xpath: { "todo": "" }
+myOwn:
+  - id: { "settings": "" }
+  - text: { "todo": "" }
+  - xpath: { "todo": "" }

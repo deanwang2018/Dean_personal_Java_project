@@ -1,15 +1,12 @@
 package app.wework.test;
 
-import app.wework.src.BasePage;
-import app.wework.src.ContactPage;
-import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.MobileElement;
+import app.wework.pageobject.ContactPage;
+import app.wework.pageobject.MainPage;
 import org.junit.jupiter.api.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 import java.io.IOException;
-import java.net.MalformedURLException;
 
 /**
  * @author wangdian
@@ -19,31 +16,36 @@ import java.net.MalformedURLException;
  */
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 public class ContactPOTest {
-    //    private static BasePage basePage;
-    private static ContactPage contactPage;
+    protected static MainPage mainPage;
+
+    @BeforeAll
+    static void beforeAll() throws IOException {
+        mainPage = new MainPage();
+        mainPage.contact();
+    }
 
     @BeforeEach
-    void beforeEach() throws IOException {
-        contactPage = new ContactPage();
+    void beforeEach() throws InterruptedException, IOException {
+        mainPage.staticContact().returnFirstPage();
     }
 
     @Order(1)
     @Test
-    void AddMemberManuallyTest() throws InterruptedException {
-        assertTrue(contactPage.addMemberManually("Ethan", "18611111111",
+    void AddMemberManuallyTest() throws InterruptedException, IOException {
+        assertTrue(mainPage.staticContact().addMemberManually("Ethan", "18611111111",
                 "123456789@qq.com", "腾讯大厦").isSearchExist("Ethan"));
     }
 
     @Order(2)
     @Test
-    void SearchAndUpdateMemberTest() throws MalformedURLException, InterruptedException {
-        assertTrue(contactPage.searchAndUpdateMember("Ethan", null, null,
+    void SearchAndUpdateMemberTest() throws IOException, InterruptedException {
+        assertTrue(mainPage.staticContact().searchAndUpdateMember("Ethan", null, null,
                 "百度大厦").getMemberInfo("Ethan").getCurrentTextView().contains("百度大厦"));
     }
 
     @Order(3)
     @Test
-    void DeleteMemberTest() throws InterruptedException {
-        assertTrue(!contactPage.searchAndDeleteMember("Ethan").isSearchExist("Ethan"));
+    void DeleteMemberTest() throws InterruptedException, IOException {
+        assertTrue(!mainPage.staticContact().searchAndDeleteMember("Ethan").isSearchExist("Ethan"));
     }
 }
