@@ -218,19 +218,19 @@ public class ContactPage extends BasePage {
 
     public ContactPage addDepart(String highLevelDept, String departName) throws InterruptedException {
 //        先搜索判断上级部门存在，再搜索判断要添加的部门不存在，在屏幕上寻找上级部门
-//        if (isSearchExist(highLevelDept)) {
-//            returnFirstPage();
-//            System.out.println("即将在 '" + highLevelDept + "' 下添加子部门");
-//        } else {
-//            throw new Error("上级部门 '" + highLevelDept + "' 不存在！");
-//        }
-//
-//        if (!isSearchExist(departName)) {
-//            returnFirstPage();
-//            System.out.println("即将在 '" + highLevelDept + "' 下添加子部门 '" + departName + "'");
-//        } else {
-//            throw new Error("'" + departName + "' 已存在，无法添加！");
-//        }
+        if (isSearchExist(highLevelDept)) {
+            returnFirstPage();
+            System.out.println("即将在 '" + highLevelDept + "' 下添加子部门");
+        } else {
+            throw new Error("上级部门 '" + highLevelDept + "' 不存在！");
+        }
+
+        if (!isSearchExist(departName)) {
+            returnFirstPage();
+            System.out.println("即将在 '" + highLevelDept + "' 下添加子部门 '" + departName + "'");
+        } else {
+            throw new Error("'" + departName + "' 已存在，无法添加！");
+        }
 
 //        获取上级部门的部门结构
         search(highLevelDept);
