@@ -3,11 +3,15 @@ package app.wework.pageobject;
 import com.alibaba.fastjson.JSONObject;
 import com.google.gson.JsonObject;
 import io.appium.java_client.AppiumDriver;
+import org.openqa.selenium.By;
 
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicBoolean;
+
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 /**
  * @author wangdian
@@ -106,17 +110,20 @@ public class ContactPage extends BasePage {
 
     public boolean isSearchExist(String content) throws InterruptedException {
         AtomicBoolean flag = new AtomicBoolean(false);
-        search(content);
+        try{
+            search(content);
 //        确保搜索结果出现
-        timeout(getLocator("xpath").get("textview").toString(), 10);
+            timeout(getLocator("xpath").get("textview").toString(), 10);
 
-        driver.findElements(byXpath(getLocator("xpath").get("textview").toString())).stream().forEach(v -> {
-                    if (v.getText().contains(content)) {
-                        flag.set(true);
+            driver.findElements(byXpath(getLocator("xpath").get("textview").toString())).stream().forEach(v -> {
+                        if (v.getText().contains(content) && !v.getText().contains("网络查找手机/邮箱")) {
+                            flag.set(true);
+                        }
                     }
-                }
-        );
-
+            );
+        } finally {
+            returnFirstPage();
+        }
         return flag.get();
     }
 
@@ -202,6 +209,11 @@ public class ContactPage extends BasePage {
         while (getCurrentTextView("attribute", "resource-id").
                 contains(getLocator("id").get("back").toString()) && count > 0) {
             click(byId(getLocator("id").get("back").toString()));
+            timeout(getLocator("xpath").get("textview").toString(), 10);
+            if (getCurrentTextView("attribute", "resource-id").
+                    contains(getLocator("id").get("closemanage").toString())) {
+                click(byId(getLocator("id").get("closemanage").toString()));
+            }
             if (getCurrentTextView("text", "").
                     contains(getLocator("text").get("cancel").toString())) {
                 click(byText(getLocator("text").get("cancel").toString()));
@@ -217,25 +229,12 @@ public class ContactPage extends BasePage {
     }
 
     public ContactPage addDepart(String highLevelDept, String departName) throws InterruptedException {
-//        先搜索判断上级部门存在，再搜索判断要添加的部门不存在，在屏幕上寻找上级部门
-        if (isSearchExist(highLevelDept)) {
-            returnFirstPage();
-            System.out.println("即将在 '" + highLevelDept + "' 下添加子部门");
-        } else {
-            throw new Error("上级部门 '" + highLevelDept + "' 不存在！");
-        }
-
-        if (!isSearchExist(departName)) {
-            returnFirstPage();
-            System.out.println("即将在 '" + highLevelDept + "' 下添加子部门 '" + departName + "'");
-        } else {
-            throw new Error("'" + departName + "' 已存在，无法添加！");
-        }
+//        先搜索判断上级部门和要添加的部门是否存在
+        assertTrue(isSearchExist(highLevelDept), "上级部门 '" + highLevelDept + "' 不存在！");
+        assertFalse(isSearchExist(departName), "'" + departName + "' 部门已存在，无法添加！");
 
 //        获取上级部门的部门结构
-        search(highLevelDept);
-        String[] deptStruct = driver.findElement(byId(getLocator("id").
-                get("deptstruct").toString())).getText().split("/");
+        String[] deptStruct = getDepartStructure(highLevelDept);
         int len = deptStruct.length;
 
         if (len >= 2) {
@@ -245,31 +244,134 @@ public class ContactPage extends BasePage {
             }
             clickAndAddDepart(highLevelDept, departName);
         } else {
-            returnFirstPage();
 //            判断上级部门是否在当前页，不在需要滚动寻找
             if (deptStruct[0].contains(getLocator("text").get("companyname").toString())) {
-                ScrollToTextAndClick(highLevelDept);
+                ScrollToTextAndClick(highLevelDept, false);
                 clickAndAddDepart(highLevelDept, departName);
             } else {
-                ScrollToTextAndClick(deptStruct[0]);
+                ScrollToTextAndClick(deptStruct[0], true);
                 clickAndAddDepart(highLevelDept, departName);
             }
         }
+        returnFirstPage();
+        returnFirstPage();
 
-//        点击管理按钮的关闭按钮
-        click(byId(getLocator("id").get("closemanage").toString()));
-//        点击后退按钮
-        click(byId(getLocator("id").get("back").toString()));
+        return this;
+    }
+
+    public ContactPage updateDepartName(String OldDepart, String NewDepart) throws InterruptedException {
+//        先搜索判断上级部门和要添加的部门是否存在
+        assertTrue(isSearchExist(OldDepart), "原部门 '" + OldDepart + "' 不存在！");
+        assertFalse(isSearchExist(NewDepart), "'" + NewDepart + "' 已存在，无法修改！");
+
+//        获取上级部门的部门结构
+        String[] deptStruct = getDepartStructure(OldDepart);
+        int len = deptStruct.length;
+
+        if (len >= 2) {
+            //        点击上级部门的前继
+            for (int i = 0; i < len; i++) {
+                click(byText(deptStruct[i]));
+            }
+            clickAndUpdateDepartName(OldDepart, NewDepart);
+        } else {
+//            判断上级部门是否是公司
+            if (deptStruct[0].contains(getLocator("text").get("companyname").toString())) {
+                ScrollToTextAndClick(OldDepart, false);
+                clickAndUpdateDepartName(OldDepart, NewDepart);
+            } else {
+                ScrollToTextAndClick(deptStruct[0], true);
+                clickAndUpdateDepartName(OldDepart, NewDepart);
+            }
+        }
+        returnFirstPage();
+        returnFirstPage();
+
+        return this;
+    }
+
+    public ContactPage deleteDepartName(String departName) throws InterruptedException {
+//        判断要删除的部门是否可删
+        search(departName);
+        click(byId(getLocator("id").get("deptstruct").toString()));
+        assertTrue(getCurrentTextView().contains("部门无成员"),
+                "部门 '" + departName + "' 下有成员或部门下还有部门无法删除！");
+
+        returnFirstPage();
+
+        String[] deptStruct = getDepartStructure(departName);
+        int len = deptStruct.length;
+
+        if (len >= 2) {
+            //        点击前继部门
+            for (int i = 0; i < len; i++) {
+                ScrollToTextAndClick(deptStruct[i], true);
+            }
+            clickAndDeleteDepartName(departName);
+        } else {
+//            判断上级部门是否是公司
+            if (deptStruct[0].contains(getLocator("text").get("companyname").toString())) {
+                ScrollToTextAndClick(departName, false);
+                clickAndDeleteDepartName(departName);
+            } else {
+                ScrollToTextAndClick(deptStruct[0], true);
+                clickAndDeleteDepartName(departName);
+            }
+        }
+        returnFirstPage();
+        returnFirstPage();
 
         return this;
     }
 
     public void clickAndAddDepart(String highLevelDept, String departName) {
-//        点击上级部门,点击管理按钮,点击添加子部门,输入部门名称,点击确认
-        click(byText(highLevelDept));
-        click(byId(getLocator("id").get("manage").toString()));
-        click(byText(getLocator("text").get("addsubdept").toString()));
-        sendKeys(byText(getLocator("text").get("senddeptname").toString()), departName);
+//        点击上级部门,点击管理按钮,点击添加子部门,输入部门名称,点击确定
+        clickSendConfirm(departName, byText(getLocator("text").get("senddeptname").toString()),
+                byText(highLevelDept),
+                byId(getLocator("id").get("manage").toString()),
+                byText(getLocator("text").get("addsubdept").toString()));
+    }
+
+    public void clickAndUpdateDepartName(String OldDept, String NewDept) {
+//        点击旧部门,点击管理按钮,点击更多管理，点击修改当前部门名称,输入新部门名称,点击确定
+        clickSendConfirm(NewDept, byXpath(getLocator("xpath").get("EditText").toString()),
+                byText(OldDept),
+                byId(getLocator("id").get("manage").toString()),
+                byText(getLocator("text").get("moremanage").toString()),
+                byText(getLocator("text").get("updatecurrentdept").toString()));
+    }
+
+    public void clickAndDeleteDepartName(String departName) {
+        seriesClick(byText(departName),
+                byId(getLocator("id").get("manage").toString()),
+                byText(getLocator("text").get("moremanage").toString()),
+                byText(getLocator("text").get("deletedept").toString()),
+                byText(getLocator("text").get("confirm").toString()));
+    }
+
+    public void clickSendConfirm(String sendKeys, By sendBy, By... by) {
+        seriesClick(by);
+        sendKeys(sendBy, sendKeys);
         click(byText(getLocator("text").get("confirm").toString()));
+    }
+
+    public void seriesClick(By... by) {
+        for (int i = 0; i < by.length; i++) {
+            click(by[i]);
+        }
+    }
+
+
+    public String[] getDepartStructure(String departName) throws InterruptedException {
+        String[] deptStruct;
+        try {
+            search(departName);
+            deptStruct = driver.findElement(byId(getLocator("id").
+                    get("deptstruct").toString())).getText().split("/");
+        } finally {
+            returnFirstPage();
+        }
+
+        return deptStruct;
     }
 }

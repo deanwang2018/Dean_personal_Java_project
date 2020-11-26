@@ -1,0 +1,14 @@
+app:
+  - platformName: android
+  - udid: 127.0.0.1:7555
+  - deviceName: hogwarts
+  - noReset: true
+  - dontStopAppOnReset: false
+  - skipLogcatCapture: true
+  - remoteUrl: http://127.0.0.1:4723/wd/hub
+  - implicitlyWait: 6
+  - WebDriverWait: 30
+web:
+  - implicitly_wait: 5
+  - get: https://ceshiren.com
+  - WebDriverWait: 20

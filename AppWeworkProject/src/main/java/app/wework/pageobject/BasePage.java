@@ -15,6 +15,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import test.framework.AndroidLocator;
+import test.framework.DriverPage;
 
 import java.io.IOException;
 import java.net.MalformedURLException;
@@ -29,7 +30,7 @@ import java.util.concurrent.TimeUnit;
  * @date 2020/11/19
  * @time 11:30
  */
-public class BasePage {
+public class BasePage extends DriverPage {
     public AppiumDriver<MobileElement> driver;
     public WebDriverWait wait;
     public DesiredCapabilities caps;
@@ -89,6 +90,7 @@ public class BasePage {
     }
 
     void sendKeys(By by, String content) {
+        driver.findElement(by).clear();
         driver.findElement(by).sendKeys(content);
     }
 
@@ -120,11 +122,15 @@ public class BasePage {
     }
 
     //只滚动到第一个匹配的text
-    void ScrollToTextAndClick(String text) {
+    void ScrollToTextAndClick(String text, boolean click) {
         AndroidDriver<MobileElement> driver = (AndroidDriver<MobileElement>) this.driver;
         String UiScrollable = "new UiScrollable(new UiSelector().scrollable(true).instance(0))." +
                 "scrollIntoView(new UiSelector().text(\"" + text + "\").instance(0));\n";
-        driver.findElementByAndroidUIAutomator(UiScrollable).click();
+        if(click){
+            driver.findElementByAndroidUIAutomator(UiScrollable).click();
+        } else{
+            driver.findElementByAndroidUIAutomator(UiScrollable);
+        }
     }
 
     public void quit() {
