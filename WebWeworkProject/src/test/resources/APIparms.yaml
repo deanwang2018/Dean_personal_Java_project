@@ -1,0 +1,9 @@
+corpid:
+  - mycompany1: ww8176a55d4ad4d300
+  - mycompany2: ww1aa64e79931be685
+corpsecret:
+  - myc1_secret_app1: Yck16PcW2llmT6ha68LatpXjrGbSbjuTKFCVrHwdElU
+  - myc1_secret_contact:
+  - myc2_secret_app1:
+  - myc2_secret_contact: 82N9nLXm5CH7ZtY6LgkWHYYziKH16zltlZLX6-icmS0
+  baseUrl: https://qyapi.weixin.qq.com/cgi-bin/
