@@ -5,6 +5,8 @@ import io.restassured.response.Response;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvFileSource;
 import web.wework.po.api.HelperFactory;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -21,7 +23,6 @@ public class DepartmentTest {
     public static String access_token;
     public static String body;
     public static HelperFactory helperFactory;
-    public static String departmentId;
 //    public Logger logger = Logger.getLogger(DepartmentTest.class);
 
     @BeforeAll
@@ -29,20 +30,23 @@ public class DepartmentTest {
         helperFactory = new HelperFactory();
         access_token = helperFactory.getToken();
         helperFactory.cleanDepartmentData("Dean");
+        helperFactory.cleanDepartmentData("abcdefghijabcdefghijabcdefghij");
+        helperFactory.cleanDepartmentData("name1983");
     }
 
     @DisplayName("创建部门")
-    @Test
-    void createDepartment() {
-        departmentId = helperFactory.createDepartment("Dean创建部门", "Dean_create_department", 1, 1).path("id").toString();
-        helperFactory.verifyDepartment(departmentId, "Dean创建部门");
+    @ParameterizedTest
+    @CsvFileSource(resources = "/data/createDepartment.csv", numLinesToSkip = 1)
+    void createDepartment(String name, String name_en, int parentid, int order, String returncode) {
+        Response createResponse = helperFactory.createDepartment(name, name_en, parentid, order);
+        assertEquals(returncode,createResponse.path("errcode").toString());
     }
 
     @DisplayName("更新部门")
     @Test
     void updateDepartment() {
         // 创建要更新的部门
-        departmentId = helperFactory.createDepartment("Dean更新前部门", "Dean_update_department", 1, 1).path("id").toString();
+        String departmentId = helperFactory.createDepartment("Dean更新前部门", "Dean_update_department", 1, 1).path("id").toString();
 
         // 更新部门并验证更新后的部门名称
         body = helperFactory.setBody("Dean更新后的部门", "Dean_update_department", 1, 1, Integer.parseInt(departmentId));
@@ -54,7 +58,7 @@ public class DepartmentTest {
     @Test
     void deleteDepartment() {
         // 创建要删除的部门
-        departmentId = helperFactory.createDepartment("Dean删除部门", "Dean_delete_department", 1, 1).path("id").toString();
+        String departmentId = helperFactory.createDepartment("Dean删除部门", "Dean_delete_department", 1, 1).path("id").toString();
         helperFactory.verifyDepartment(departmentId, "Dean删除部门");
 
         // 删除部门
@@ -72,7 +76,7 @@ public class DepartmentTest {
     @Test
     void listDepartment() {
         // 创建要验证的部门，列出所有部门，其中包含刚创建的
-        departmentId = helperFactory.createDepartment("Dean列出部门", "Dean_list_department", 1, 1).path("id").toString();
+        String departmentId = helperFactory.createDepartment("Dean列出部门", "Dean_list_department", 1, 1).path("id").toString();
         Response response = helperFactory.get(helperFactory.baseUrl + "department/list",
                 "access_token", access_token);
         assertTrue(response.path("department.name").toString().contains("Dean列出部门"));

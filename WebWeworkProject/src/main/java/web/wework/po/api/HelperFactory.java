@@ -17,8 +17,8 @@ import static org.hamcrest.Matchers.*;
  * @time 9:44
  */
 public class HelperFactory {
-    String corpid = "ww1aa64e79931be685";
-    String corpsecret = "82N9nLXm5CH7ZtY6LgkWHYYziKH16zltlZLX6-icmS0";
+    String corpid = "ww8176a55d4ad4d300";
+    String corpsecret = "5_G4BfcVfHg5U2fcrzk-UGTQEJMNHUSujkskKGDCIsM";
     public static final String baseUrl = "https://qyapi.weixin.qq.com/cgi-bin/";
     String access_token;
     String body;
@@ -31,24 +31,22 @@ public class HelperFactory {
     }
 
     public String setBody(String name, String name_en, int parentid, int order, int id) {
-        body = "{\n" +
+        return "{\n" +
                 "   \"name\": \"" + name + "\",\n" +
                 "   \"name_en\": \"" + name_en + "\",\n" +
                 "   \"parentid\": " + parentid + ",\n" +
                 "   \"order\": " + order + ",\n" +
                 "   \"id\": " + id + "\n" +
                 "}";
-        return body;
     }
 
     public String setBody(String name, String name_en, int parentid, int order) {
-        body = "{\n" +
+        return "{\n" +
                 "   \"name\": \"" + name + "\",\n" +
                 "   \"name_en\": \"" + name_en + "\",\n" +
                 "   \"parentid\": " + parentid + ",\n" +
                 "   \"order\": " + order + "\n" +
                 "}";
-        return body;
     }
 
     public void cleanDepartmentData(String deptNamePrefix) {
@@ -67,8 +65,7 @@ public class HelperFactory {
     }
 
     public Response createDepartment(String name, String name_en, int parentid, int order) {
-        body = setBody(name, name_en, parentid, order);
-        return post("application/json", body, baseUrl + "department/create?access_token=" + access_token);
+        return post("application/json", setBody(name, name_en, parentid, order), baseUrl + "department/create?access_token=" + access_token);
     }
 
     public void verifyDepartment(String departmentId, String name) {
@@ -92,7 +89,7 @@ public class HelperFactory {
                 .contentType(contentType)
                 .body(body)
                 .when().post(url)
-                .then()
+                .then().log().all()
                 .extract()
                 .response();
     }
