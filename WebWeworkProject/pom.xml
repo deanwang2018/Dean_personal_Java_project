@@ -58,6 +58,14 @@
     </build>
 
     <dependencies>
+
+        <dependency>
+            <groupId>org.hamcrest</groupId>
+            <artifactId>hamcrest</artifactId>
+            <version>2.2</version>
+            <scope>compile</scope>
+        </dependency>
+
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-engine</artifactId>
@@ -77,6 +85,13 @@
             <groupId>org.junit.platform</groupId>
             <artifactId>junit-platform-runner</artifactId>
             <version>1.5.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>5.7.0</version>
+            <scope>compile</scope>
         </dependency>
 
         <dependency>
@@ -187,6 +202,14 @@
             <artifactId>fastjson</artifactId>
             <version>RELEASE</version>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/de.sstoehr/har-reader -->
+        <dependency>
+            <groupId>de.sstoehr</groupId>
+            <artifactId>har-reader</artifactId>
+            <version>2.1.10</version>
+        </dependency>
+
 
     </dependencies>
 
