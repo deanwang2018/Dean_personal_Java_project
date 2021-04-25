@@ -1,7 +1,12 @@
 package example;
 
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
+import util.Calculator;
+import util.FakerUtils;
+
+import java.io.IOException;
 
 /**
  * @author wangdian
@@ -32,5 +37,26 @@ public class Demo_DataProvider {
         Thread.sleep(1000);
         System.out.println("傻笑哥 操作" + packageName + "装入坚果E " + eNum + "个！ \n");
         Thread.sleep(1000);
+    }
+
+    @DataProvider(name = "testData")
+    public static Object[][] words() throws IOException {
+        return FakerUtils.getTestData("/src/main/resources/data/divideparam.csv");
+    }
+
+    @Test(threadPoolSize = 1, invocationCount = 1, dataProvider = "testData")
+    public void divTest(String x, String y) throws InterruptedException {
+        int result = Calculator.divide(Integer.valueOf(x), Integer.valueOf(y));
+        System.out.println(result);
+    }
+
+    @DataProvider(name = "testData2")
+    public static Object[][] words2() throws IOException {
+        return FakerUtils.getTestData("/src/main/resources/data/multicolumn.csv");
+    }
+
+    @Test(dataProvider = "testData2")
+    public void multiColumnTest(String x, String y, String a, String b, String c, String d) throws InterruptedException {
+        System.out.println("x:" + x + ",y:" + y + ",a:" + a + ",b:" + b + ",c:" + c + ",d:" + d);
     }
 }

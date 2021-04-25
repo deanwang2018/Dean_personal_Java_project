@@ -19,7 +19,7 @@ public class Demo_Multithreading {
         System.out.println("装入坚果 B \n");
     }
 
-    @Test(threadPoolSize = 2, invocationCount = 2, timeOut = 60000, groups = {"group01", "group02"})
+    @Test(threadPoolSize = 5, invocationCount = 5, timeOut = 60000, groups = {"group01", "group02"})
     public void putInC() throws Exception {
         Thread.sleep(1000);
         long id = Thread.currentThread().getId();

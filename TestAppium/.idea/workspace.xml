@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a0f8a85a-61b2-4903-8e6f-04a73c5cb529" name="Default Changelist" comment="add test appium example">
+      <change afterPath="$PROJECT_DIR$/../InterviewDemo/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InterviewDemo/InterviewDemo.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Junit5Demo/src/main/java/test_framework/BasePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Junit5Demo/src/main/java/test_framework/UIAuto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Junit5Demo/src/main/resources/test_framework/uiauto.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Junit5Demo/src/test/java/test_framework/BasePageTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Junit5Demo/src/test/resources/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Junit5Demo/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Junit5Demo/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Junit5Demo/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Junit5Demo/target/surefire-reports/2020-09-30T15-50-16_882.dumpstream" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Junit5Demo/target/surefire-reports/LoginTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Junit5Demo/target/surefire-reports/TEST-LoginTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Junit5Demo/target/surefire-reports/TEST-junit5.TestAssertion.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Junit5Demo/target/surefire-reports/TEST-junit5.TestDynamic.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Junit5Demo/target/surefire-reports/TEST-junit5.TestParam.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Junit5Demo/target/surefire-reports/TEST-junit5.TestYaml.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Junit5Demo/target/surefire-reports/TEST-suite.com.testcase.Junit5Demo1Test.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Junit5Demo/target/surefire-reports/TEST-suite.com.testcase1.Junit5Demo1Test.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Junit5Demo/target/surefire-reports/TEST-suite.com.testcase2.Junit5Demo1Test.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Junit5Demo/target/surefire-reports/junit5.TestAssertion.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Junit5Demo/target/surefire-reports/junit5.TestDynamic.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Junit5Demo/target/surefire-reports/junit5.TestParam.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Junit5Demo/target/surefire-reports/junit5.TestYaml.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Junit5Demo/target/surefire-reports/suite.com.testcase.Junit5Demo1Test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Junit5Demo/target/surefire-reports/suite.com.testcase1.Junit5Demo1Test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Junit5Demo/target/surefire-reports/suite.com.testcase2.Junit5Demo1Test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Junit5Demo/target/test-classes/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Junit5Demo/target/test-classes/junit5/AllureTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Junit5Demo/target/test-classes/junit5/TestDynamic$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Junit5Demo/target/test-classes/junit5/TestDynamic.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Junit5Demo/target/test-classes/suite/com/testcase/Junit5Demo1Test.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Junit5Demo/target/test-classes/suite/com/testcase1/Junit5Demo1Test.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Junit5Demo/target/test-classes/suite/com/testcase2/Junit5Demo1Test.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/testAppium/BaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/testAppium/HelloWorldTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/testAppium/SnowBallTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/testAppium/SwipeUnlockTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/techAppium.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestSelenium/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestSelenium/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestSelenium/debug.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestSelenium/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestSelenium/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestSelenium/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestSelenium/target/surefire-reports/TEST-testcase.AlertTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestSelenium/target/surefire-reports/testcase.AlertTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestSelenium/target/test-classes/StartSeleniumTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestSelenium/target/test-classes/page/ConTactPage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestSelenium/target/test-classes/page/MainPage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestSelenium/target/test-classes/testcase/AiceTest$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestSelenium/target/test-classes/testcase/AiceTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestSelenium/target/test-classes/testcase/AlertTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestSelenium/target/test-classes/testcase/BaseTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestSelenium/target/test-classes/testcase/BrowserTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestSelenium/target/test-classes/testcase/FrameTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestSelenium/target/test-classes/testcase/InteractiveTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestSelenium/target/test-classes/testcase/JsTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestSelenium/target/test-classes/testcase/RemoteBrowserTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestSelenium/target/test-classes/testcase/TestContact.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestSelenium/target/test-classes/testcase/UploadTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestSelenium/target/test-classes/testcase/WindowTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestSelenium/tech_selenium.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cucumberDemo/cucumberDemo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Junit5Demo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Junit5Demo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Junit5Demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Junit5Demo/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Junit5Demo/src/test/java/com/testcase/Junit5Demo1Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Junit5Demo/src/test/java/suite/com/testcase/Junit5Demo1Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Junit5Demo/src/test/java/com/testcase1/Junit5Demo1Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Junit5Demo/src/test/java/suite/com/testcase1/Junit5Demo1Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Junit5Demo/src/test/java/com/testcase2/Junit5Demo1Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Junit5Demo/src/test/java/suite/com/testcase2/Junit5Demo1Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Junit5Demo/src/test/java/junit5/TestYaml.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Junit5Demo/src/test/java/junit5/TestYaml.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Junit5Demo/src/test/java/suite/Junit5SuiteDemoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Junit5Demo/src/test/java/suite/Junit5SuiteDemoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Junit5Demo/target/test-classes/com/testcase/Junit5Demo1Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Junit5Demo/target/test-classes/com/testcase1/Junit5Demo1Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Junit5Demo/target/test-classes/com/testcase2/Junit5Demo1Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Junit5Demo/target/test-classes/junit5/TestAssertion.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Junit5Demo/target/test-classes/junit5/TestAssertion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Junit5Demo/target/test-classes/junit5/TestYaml.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Junit5Demo/target/test-classes/junit5/TestYaml.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Junit5Demo/target/test-classes/suite/Junit5SuiteDemoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Junit5Demo/target/test-classes/suite/Junit5SuiteDemoTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/HelloWorldTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TestNGDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TestNGDemo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TestSelenium/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TestSelenium/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TestSelenium/src/test/java/page/ConTactPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TestSelenium/src/test/java/page/ConTactPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TestSelenium/src/test/java/testcase/RemoteBrowserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TestSelenium/src/test/java/testcase/RemoteBrowserTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:\Dean_working_dir\working_software_target\IntelliJ IDEA Community Edition 2020.2.2\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1irEk83p4sej8KR8L07ume5XJOd" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.42873564" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="test_framework" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="test_framework" />
+      <recent name="testAppium" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Dean_working_dir\IDEAworkspace\Dean_personal\TestAppium\src\main\resources\test_framework" />
+      <recent name="D:\Dean_working_dir\IDEAworkspace\Dean_personal\TestAppium\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.HelloWorldTest.scrollUiautomatorTest">
+    <configuration name="HelloWorldTest.helloSnowBallTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="techAppium" />
+      <option name="PACKAGE_NAME" value="testAppium" />
+      <option name="MAIN_CLASS_NAME" value="testAppium.HelloWorldTest" />
+      <option name="METHOD_NAME" value="helloSnowBallTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HelloWorldTest.scrollUiautomatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="techAppium" />
+      <option name="PACKAGE_NAME" value="testAppium" />
+      <option name="MAIN_CLASS_NAME" value="testAppium.HelloWorldTest" />
+      <option name="METHOD_NAME" value="scrollUiautomatorTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HelloWorldTest.uiautomatorSelectTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="techAppium" />
+      <option name="PACKAGE_NAME" value="testAppium" />
+      <option name="MAIN_CLASS_NAME" value="testAppium.HelloWorldTest" />
+      <option name="METHOD_NAME" value="uiautomatorSelectTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SnowBallTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="techAppium" />
+      <option name="PACKAGE_NAME" value="testAppium" />
+      <option name="MAIN_CLASS_NAME" value="testAppium.SnowBallTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SnowBallTest.searchTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="techAppium" />
+      <option name="PACKAGE_NAME" value="testAppium" />
+      <option name="MAIN_CLASS_NAME" value="testAppium.SnowBallTest" />
+      <option name="METHOD_NAME" value="searchTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.HelloWorldTest.scrollUiautomatorTest" />
+        <item itemvalue="JUnit.HelloWorldTest.uiautomatorSelectTest" />
+        <item itemvalue="JUnit.HelloWorldTest.helloSnowBallTest" />
+        <item itemvalue="JUnit.SnowBallTest.searchTest" />
+        <item itemvalue="JUnit.SnowBallTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a0f8a85a-61b2-4903-8e6f-04a73c5cb529" name="Default Changelist" comment="" />
+      <created>1602647479435</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1602647479435</updated>
+    </task>
+    <task id="LOCAL-00001" summary="add test appium example">
+      <created>1603089144785</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1603089144785</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add test appium example" />
+    <option name="LAST_COMMIT_MESSAGE" value="add test appium example" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="121" y="0" key="#Project_Structure" timestamp="1603948042693">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="121" y="0" key="#Project_Structure/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1603948042693" />
+    <state x="419" y="203" width="443" height="273" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1603944518464">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="419" y="203" width="443" height="273" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1603944518464" />
+    <state width="1237" height="141" key="GridCell.Tab.0.bottom" timestamp="1603334006888">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="141" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1603334006888" />
+    <state width="1237" height="141" key="GridCell.Tab.0.center" timestamp="1603334006888">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="141" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1603334006888" />
+    <state width="1237" height="141" key="GridCell.Tab.0.left" timestamp="1603334006888">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="141" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1603334006888" />
+    <state width="1237" height="141" key="GridCell.Tab.0.right" timestamp="1603334006888">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="141" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1603334006888" />
+    <state x="171" y="0" key="Maven.ArtifactSearchDialog" timestamp="1603947606425">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="171" y="0" key="Maven.ArtifactSearchDialog/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1603947606425" />
+    <state x="233" y="73" key="Vcs.Push.Dialog.v2" timestamp="1603089162864">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="233" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1603089162864" />
+    <state x="439" y="118" key="chooseDestDirectoryDialog" timestamp="1603944517052">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="439" y="118" key="chooseDestDirectoryDialog/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1603944517052" />
+    <state x="412" y="97" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1603944566844">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="412" y="97" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1603944566844" />
+    <state x="28" y="1" key="new project wizard" timestamp="1603696068918">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="28" y="1" key="new project wizard/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1603696068918" />
+  </component>
+</project>

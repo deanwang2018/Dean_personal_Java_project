@@ -1,2 +1,6 @@
-com\testcase\Junit4Demo1Test.class
 com\testcase\Junit4Demo2Test.class
+com\suitedemo\SuitDemoTest.class
+com\testcase\BaseTest.class
+com\testcase\LoginTest.class
+com\testcase\Junit4Demo1Test.class
+com\testcase\BuyTest.class

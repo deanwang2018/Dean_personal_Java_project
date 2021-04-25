@@ -15,10 +15,10 @@ import org.junit.runner.RunWith;
  */
 
 @RunWith(JUnitPlatform.class)
-//@SelectPackages({"com"})
-//@IncludePackages({"com.testcase1","com.testcase2"})
-@SelectClasses({com.testcase.Junit5Demo1Test.class})
-@IncludeTags({"testTagDemo2"})
+@SelectPackages({"suite.com"})
+@IncludePackages({"suite.com.testcase1","suite.com.testcase2"})
+//@SelectClasses({suite.com.testcase.Junit5Demo1Test.class})
+//@IncludeTags({"testTagDemo2"})
 public class Junit5SuiteDemoTest {
 
 }

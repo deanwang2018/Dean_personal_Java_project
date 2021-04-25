@@ -1,0 +1,8 @@
+steps:
+  - user: Ethan
+  - accid: "18611111112"
+  - mobile: "18611111112"
+  - deptSearch: 测试开发部
+  - noMember: 无任何成员
+  - oldDept: 质检保障部
+  - newDept: 质量保障部

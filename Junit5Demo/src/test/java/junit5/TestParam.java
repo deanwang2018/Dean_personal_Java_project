@@ -106,12 +106,4 @@ public class TestParam {
         assertNotNull(country);
         assertNotEquals(0, reference);
     }
-
-//    @TestFactory
-//    DynamicTest[] dynamicTestsFromArray(){
-//        return new DynamicTest[]{
-//                dynamicTest("7th dynamic test", () -> assertTrue(isplindrome("madam"))),
-//                dynamicTest("8th dynamic test", () -> assertEquals(4, calculator.multiply(2, 2)))
-//        };
-//    }
 }
